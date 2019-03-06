@@ -60,3 +60,18 @@ cat.eat = function () {
     console.log('num num num');
 };
 cat.eat();
+// classes
+var CoinGenerator = /** @class */ (function () {
+    function CoinGenerator(id) {
+        this.id = '';
+        this.key = '001';
+        this.id = id;
+    }
+    ;
+    CoinGenerator.prototype.generateTransaction = function (recipient) {
+        return this.id + "-" + recipient + "-" + this.key;
+    };
+    return CoinGenerator;
+}());
+var myCoin = new CoinGenerator('505050');
+console.log(myCoin.generateTransaction('15354668'));

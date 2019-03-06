@@ -92,3 +92,17 @@ cat.eat = function(){
     console.log('num num num');
 }
 cat.eat();
+
+// classes
+
+class CoinGenerator {
+    private id: string = '';
+    private key: string = '001';
+    constructor(id: string){ this.id = id; };  
+    public generateTransaction(recipient: string): string {
+        return `${this.id}-${recipient}-${this.key}`;
+    }
+}
+
+const myCoin = new CoinGenerator('505050');
+console.log(myCoin.generateTransaction('15354668'));
