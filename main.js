@@ -75,3 +75,6 @@ var CoinGenerator = /** @class */ (function () {
 }());
 var myCoin = new CoinGenerator('505050');
 console.log(myCoin.generateTransaction('15354668'));
+// union
+var myUnion = true;
+console.log(myUnion);

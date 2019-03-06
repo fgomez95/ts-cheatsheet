@@ -106,3 +106,8 @@ class CoinGenerator {
 
 const myCoin = new CoinGenerator('505050');
 console.log(myCoin.generateTransaction('15354668'));
+
+// union
+
+let myUnion: string | boolean = true;
+console.log(myUnion);
