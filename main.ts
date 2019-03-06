@@ -77,3 +77,18 @@ function dogShower(dog: Dog): void{
     dog.woof();
 }
 dogShower(dog);
+
+// type assertion and optional attributes
+
+interface Cat {
+    color: string,
+    eat(): void,
+    jump?(): void,
+}
+
+let cat = {} as Cat;
+cat.color = 'black';
+cat.eat = function(){
+    console.log('num num num');
+}
+cat.eat();

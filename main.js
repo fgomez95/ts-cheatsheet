@@ -54,3 +54,9 @@ function dogShower(dog) {
     dog.woof();
 }
 dogShower(dog);
+var cat = {};
+cat.color = 'black';
+cat.eat = function () {
+    console.log('num num num');
+};
+cat.eat();
